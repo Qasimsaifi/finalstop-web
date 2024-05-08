@@ -1,9 +1,12 @@
 import {Hero} from "@/components/Hero";
+import { AnimatedPin } from "@/components/Projects";
 import { SparklesPreview } from "@/components/SaprklessView";
 import { WhatWeDo } from "@/components/WhatWeDo";
+import { fetchServices } from "@/utils/utils";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+
   return (
   <>
   {/* <button className="btn">Button</button>
@@ -18,6 +21,7 @@ export default function Home() {
 </div>
 {/* <SparklesPreview/> */}
 <WhatWeDo/>
+<AnimatedPin/>
   </>
   );
 }

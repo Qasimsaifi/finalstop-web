@@ -7,6 +7,7 @@ async function fetchServices(url , token) {
           headers: {
             Authorization: `Bearer ${token}`,
           },
+          cache: 'no-store'
         });
         if (!response.ok) {
           throw new Error('Network response was not ok');

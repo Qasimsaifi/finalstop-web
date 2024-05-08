@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "./ui/tracing-beam";
@@ -7,9 +6,10 @@ import { fetchServices } from "@/utils/utils";
 
 
 export async function WhatWeDo() {
-
-    const servicesData = await fetchServices(`${process.env.API_URL}/api/services?populate=*` , process.env.API_TOKEN)
     
+    const servicesData = await fetchServices(`${process.env.API_URL}/api/services?populate=*` , process.env.API_TOKEN)
+
+    // console.log(servicesData);
 
     return (
         <>
