@@ -9,6 +9,7 @@ export default async function Home() {
 
   return (
   <>
+  
   {/* <button className="btn">Button</button>
 <button className="btn btn-neutral">Neutral</button>
 <button className="btn btn-primary">Primary</button>
@@ -16,9 +17,9 @@ export default async function Home() {
 <button className="btn btn-accent">Accent</button>
 <button className="btn btn-ghost">Ghost</button>
 <button className="btn btn-link">Link</button> */}
-<div className="h-[220vh]">
+
 <Hero/>
-</div>
+
 {/* <SparklesPreview/> */}
 <WhatWeDo/>
 <AnimatedPin/>

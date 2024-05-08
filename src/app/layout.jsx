@@ -12,10 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html data-theme="mytheme" lang="en">
-      <body className={inter.className}>
+      <body className='bg-white dark:bg-black'>
         <Providers>
 
           <NavbarDemo />
+
           {children}
         </Providers>
       </body>
