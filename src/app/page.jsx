@@ -1,9 +1,7 @@
 import {Hero} from "@/components/Hero";
 import { AnimatedPin } from "@/components/Projects";
-import { SparklesPreview } from "@/components/SaprklessView";
 import { WhatWeDo } from "@/components/WhatWeDo";
-import { fetchServices } from "@/utils/utils";
-import Image from "next/image";
+import { HeroHighlight } from "@/components/ui/hero-highlight";
 
 export default async function Home() {
 
@@ -17,12 +15,17 @@ export default async function Home() {
 <button className="btn btn-accent">Accent</button>
 <button className="btn btn-ghost">Ghost</button>
 <button className="btn btn-link">Link</button> */}
+<div>
 
 <Hero/>
+</div>
 
 {/* <SparklesPreview/> */}
+<HeroHighlight>
+
 <WhatWeDo/>
 <AnimatedPin/>
+</HeroHighlight>
   </>
   );
 }

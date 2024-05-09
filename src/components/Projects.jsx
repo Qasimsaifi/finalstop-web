@@ -24,7 +24,7 @@ export async function AnimatedPin() {
                                 </span>
                             </div>
                             <div className="flex flex-1 w-full rounded-lg mt-4 mb-4" />
-                            <img className="w-full h-full mb-4" src={item?.attributes?.image?.data[0]?.attributes?.formats?.large?.url} alt="" />
+                            <img className="w-full h-full mb-4 rounded-md" src={item?.attributes?.image?.data[0]?.attributes?.formats?.large?.url} alt="" />
                         </div>
                     </PinContainer>
                 ))}
