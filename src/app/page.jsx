@@ -1,6 +1,7 @@
 import {Hero} from "@/components/Hero";
 import NewBar from "@/components/NewBar";
 import { AnimatedPin } from "@/components/Projects";
+import { Testimonials } from "@/components/Testimonials";
 import { WhatWeDo } from "@/components/WhatWeDo";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
 
@@ -27,7 +28,9 @@ export default async function Home() {
 
 <WhatWeDo/>
 <AnimatedPin/>
+<Testimonials/>
 </HeroHighlight>
+
   </>
   );
 }
