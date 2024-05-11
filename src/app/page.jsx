@@ -29,9 +29,11 @@ export default async function Home() {
 
 <WhatWeDo/>
 <AnimatedPin/>
-<OurTeam/>
-<Testimonials/>
 
+<OurTeam/>
+<div className="overflow-hi w-screen">
+<Testimonials/>
+</div>
 </HeroHighlight>
 
   </>

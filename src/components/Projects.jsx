@@ -8,7 +8,7 @@ export async function AnimatedPin() {
         <>
             <h1 className="text-4xl sm:text-4xl md:text-4xl my-8 lg:text-5xl xl:text-6xl font-bold text-center mb-4 mt-16">Our Projects</h1>
 
-            <div className="md:w-[70vw] lg:w-[70vw] mb-28 mx-auto mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-12">
+            <div className="md:w-[70vw] lg:w-[70vw] mb-28 mx-auto mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12">
                 {projectsData.map((item, index) => (
                     <PinContainer
                         title={item?.attributes?.url}
