@@ -1,3 +1,5 @@
+import { ConatctForm } from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 import {Hero} from "@/components/Hero";
 import NewBar from "@/components/NewBar";
 import { AnimatedPin } from "@/components/Projects";
@@ -26,14 +28,25 @@ export default async function Home() {
 
 {/* <SparklesPreview/> */}
 <HeroHighlight>
+<div id="services">
 
 <WhatWeDo/>
+</div>
+<div >
 <AnimatedPin/>
+</div>
+<div id="team">
 
 <OurTeam/>
-<div className="overflow-hi w-screen">
+</div>
+<div className="overflow-hi w-screen" id="testimonials">
 <Testimonials/>
 </div>
+<div id="contact">
+
+<ConatctForm/>
+</div>
+<Footer/>
 </HeroHighlight>
 
   </>
