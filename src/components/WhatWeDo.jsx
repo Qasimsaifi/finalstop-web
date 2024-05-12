@@ -13,7 +13,7 @@ export async function WhatWeDo() {
 
     return (
         <>
-        <h1 className="text-4xl sm:text-4xl md:text-4xl my-8 lg:text-5xl xl:text-6xl font-bold text-center mt-24 mb-8">What We Provide</h1>
+        <h1 className="text-4xl sm:text-4xl md:text-4xl my-8 lg:text-5xl xl:text-6xl font-bold text-center mt-2 mb-8">What We Provide</h1>
 
             <div className="md:w-[70vw] lg:w-[70vw] mx-auto antialiased pt-4 relative">
                 <HoverEffect items={servicesData} />
