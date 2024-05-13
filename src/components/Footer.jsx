@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex flex-col items-center mb-4 sm:mb-0">
               <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse" >
                 <img src="logo-hero.png" className="h-8" alt="Flowbite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FinalStop<span className="font-extrabold text-2xl text-center mb-1 text-\[#7cb40c\] ">.</span> </span>
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FinalStop<span className="font-extrabold text-2xl text-center mb-1 text-[#7cb40c] ">.</span> </span>
               </a>
             </div>
             <div className="flex flex-col items-center mb-6 sm:mb-0">
