@@ -6,8 +6,8 @@ import { HeroHighlight } from "@/components/ui/hero-highlight";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "FinalStop",
-  description: "final stop",
+  title: "FinalStop: Your Ultimate Destination for Digital Solutions",
+  description: "Discover FinalStop, where expertise meets creativity. From web and app development to graphic design, branding, video editing, and social media management, we're your one-stop solution for all your digital needs.",
 };
 
 export default function RootLayout({ children }) {
