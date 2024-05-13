@@ -19,7 +19,7 @@ export function ConatctForm() {
        <h1 className="text-4xl sm:text-4xl md:text-4xl my-8 lg:text-5xl xl:text-6xl font-bold text-center mb-16 mt-16">
       Contact Us
       </h1>
-    <div className="max-w-2xl w-full mx-auto rounded-none md:rounded-2xl mb-16 p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <div className=" w-screen lg:w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
       {/* <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
         Login to aceternity if you can because we don&apos;t have a login flow
         yet
