@@ -23,3 +23,8 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
