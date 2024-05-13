@@ -5,6 +5,14 @@ const Footer = () => {
     <div>
         <footer className=" md:flex bg-white dark:bg-black md:items-center md:justify-between shadow rounded-lg px-4 md:px-6 xl:px-8 py-2 md:py-4 xl:py-6 ">
   <ul className="flex items-center flex-wrap mb-6 md:mb-0">
+    <li className='mr-4 mt-6'>
+      <a
+        href="/projects"
+        className="text-sm font-normal  hover:underline mr-md:mr-6"
+      >
+        <img src="logo-hero.png" className="h-16 w-16" alt="" />
+      </a>
+    </li>
     <li>
       <a
         href="/projects"
