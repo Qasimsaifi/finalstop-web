@@ -4,7 +4,7 @@ import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 
 export function Hero() {
   return (
-    <HeroHighlight>
+
       <div className="mt-[20vh] lg:mt-[25vh] mb-[1vh]">
         <motion.h1
           initial={{
@@ -32,6 +32,5 @@ export function Hero() {
         
         </motion.h1>
       </div>
-    </HeroHighlight>
   );
 }

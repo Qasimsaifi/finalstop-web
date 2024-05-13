@@ -1,4 +1,5 @@
 import { ConatctForm } from "@/components/ContactForm";
+import Stats from "@/components/CountDown";
 import Footer from "@/components/Footer";
 import {Hero} from "@/components/Hero";
 import NewBar from "@/components/NewBar";
@@ -6,6 +7,7 @@ import { AnimatedPin } from "@/components/Projects";
 import { OurTeam } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
 import { WhatWeDo } from "@/components/WhatWeDo";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
 
 export default async function Home() {
@@ -27,27 +29,20 @@ export default async function Home() {
 </div>
 
 {/* <SparklesPreview/> */}
-<HeroHighlight>
+{/* <HeroHighlight> */}
 <div id="services">
 
 <WhatWeDo/>
 </div>
-<div >
-<AnimatedPin/>
-</div>
-<div id="team">
 
-<OurTeam/>
-</div>
+<WhyChooseUs/>
+<Stats/>
 <div className="overflow-hi w-screen" id="testimonials">
 <Testimonials/>
 </div>
-<div id="contact">
 
-<ConatctForm/>
-</div>
 <Footer/>
-</HeroHighlight>
+{/* </HeroHighlight> */}
 
   </>
   );
