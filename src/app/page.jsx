@@ -41,7 +41,6 @@ export default async function Home() {
 <Testimonials/>
 </div>
 
-<Footer/>
 {/* </HeroHighlight> */}
 
   </>

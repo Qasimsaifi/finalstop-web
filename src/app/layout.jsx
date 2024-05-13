@@ -3,6 +3,7 @@ import "./globals.css";
 import { NavbarDemo } from "@/components/Navbar";
 import { Providers } from './Providers'
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
           <NavbarDemo />
 
           {children}
+
         </HeroHighlight>
+<Footer/>
         </Providers>
       </body>
     </html>
