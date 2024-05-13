@@ -10,7 +10,7 @@ export function WhyChooseUs() {
       
       <div className="md:w-[70vw] lg:w-[70vw] mb-28 mx-auto mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12">
       {whyChooseUsData.whyChooseUs.map((item, index) => (
-        <div className=" w-full sm:w-screen mx-auto relative max-w-xs ">
+        <div className=" w-full sm:w-screen mx-auto relative max-w-sm ">
           <div className="absolute inset-0 h-full  w-full bg-gradient-to-r from-slate-800/[0.8] to-slate-900/[0.8] transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
             <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
