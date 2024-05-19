@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "./ui/label";
 import { Input, TextArea } from "./ui/input";
 import { cn } from "@/utils/cn";
+import emailjs from "@emailjs/browser";
 import {
   IconBrandGithub,
   IconBrandGoogle,
@@ -10,9 +11,42 @@ import {
 } from "@tabler/icons-react";
 
 export function ConatctForm() {
+  const [isSubmiting , setIsSubmiting] = useState(false)
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
   const handleSubmit = (e) => {
+    setIsSubmiting(true)
     e.preventDefault();
-    console.log("Form submitted");
+
+    emailjs.send(
+      'service_njfbsu4', // Replace with your EmailJS service ID
+      'template_rmmxwit', // Replace with your EmailJS template ID
+      formData,
+      'D-3nw_HoYu3RYBiKM' // Replace with your EmailJS user ID
+    ).then((result) => {
+      setIsSubmiting(false)
+        // console.log(result.text);
+        // alert("Message sent successfully!");
+      }, (error) => {
+      setIsSubmiting(false)
+
+        // console.log(error.text);
+        // alert("An error occurred, please try again.");
+      });
   };
   return (
     <>
@@ -29,36 +63,63 @@ export function ConatctForm() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
             <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Tyler" type="text" />
+            <Input
+                id="firstname"
+                placeholder="Tyler"
+                type="text"
+                value={formData.firstname}
+                onChange={handleChange}
+              />
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
+            <Input
+                id="lastname"
+                placeholder="Durden"
+                type="text"
+                value={formData.lastname}
+                onChange={handleChange}
+              />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email</Label>
-          <Input id="email" placeholder="example@xyz.com" type="email" />
+          <Input
+              id="email"
+              placeholder="example@xyz.com"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="mobile">Mobile Number</Label>
           <Input
-            id="mobile"
-            placeholder="Enter your mobile number"
-            type="tel"
-          />
+              id="mobile"
+              placeholder="Enter your mobile number"
+              type="tel"
+              value={formData.mobile}
+              onChange={handleChange}
+            />
         </LabelInputContainer>
 
         <LabelInputContainer className="mb-8">
           <Label htmlFor="message">Message</Label>
-          <TextArea id="message" placeholder="Message" type="text" />
+          <TextArea
+              id="message"
+              placeholder="Message"
+              type="text"
+              value={formData.message}
+              onChange={handleChange}
+            />
         </LabelInputContainer>
 
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
-        >
-          Send &rarr;
+          disabled={isSubmiting}
+          >
+            {isSubmiting ? "Submitting..." : "Send →"}
           <BottomGradient />
         </button>
 
