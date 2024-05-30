@@ -37,9 +37,9 @@ export default async function Home() {
 
 <WhyChooseUs/>
 <Stats/>
-<div className="overflow-hi w-screen" id="testimonials">
+{/* <div className="overflow-hi w-screen" id="testimonials">
 <Testimonials/>
-</div>
+</div> */}
 
 {/* </HeroHighlight> */}
 

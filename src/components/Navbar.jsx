@@ -22,7 +22,7 @@ function Navbar({ className }) {
       
         <MenuItem setActive={setActive}  active={active} hrefLink="/" item="Home"/>
         <MenuItem setActive={setActive}  active={active} hrefLink="/contact" item="Contact"/>
-        <MenuItem setActive={setActive}  active={active} hrefLink="/projects" item="Projects"/>
+        {/* <MenuItem setActive={setActive}  active={active} hrefLink="/projects" item="Projects"/> */}
         <MenuItem setActive={setActive}  active={active} hrefLink="/about" item="About"/>
         {/* <MenuItem setActive={setActive}  active={active} hrefLink="/services" item="Services"/> */}
           
