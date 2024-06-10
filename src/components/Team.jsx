@@ -14,7 +14,7 @@ export async function OurTeam() {
       <h1 className="text-4xl sm:text-4xl md:text-4xl my-8 lg:text-5xl xl:text-6xl font-bold text-center mb-8 mt-16">
         Our Team
       </h1>
-      <div className="md:w-[70vw] lg:w-[70vw] mb-28 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-12 place-items-center justify-center">
+      <div className="md:w-[70vw] lg:w-[80vw] mb-28 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-12 place-items-center justify-center">
         {projectsData.map((item, index) => (
           <CardContainer className="inter-var">
             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border ">
@@ -36,7 +36,7 @@ export async function OurTeam() {
                   src={item?.attributes?.image?.data?.attributes?.url}
                   height="1000"
                   width="1000"
-                  className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                  className="h-2/4- w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
                 />
               </CardItem>
